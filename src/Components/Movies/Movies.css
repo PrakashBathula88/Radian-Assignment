@@ -1,0 +1,76 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .movie-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 40px);
+    transition: transform 0.2s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .movie-card h2 {
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .movie-card p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+/* 
+  for the responsive web designing */
+
+  @media (max-width: 1200px) {
+    .movie-card {
+      width: calc(33.333% - 40px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .movie-card {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      width: calc(100% - 40px);
+    }
+  }
+  
